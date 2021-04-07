@@ -53,7 +53,7 @@ const App = () => {
   const renderItem = ({ item }) => (
     <View style={styles.itemTodo}>
       <Text style={[styles.item, item.completed ? styles.lineThrough : null]}>
-        {item ? item.text : ''}
+        {item.text}
       </Text>
       <View style={styles.actionButtons}>
         <TouchableOpacity onPress={() => completeTodo(item.id)}>
@@ -88,6 +88,7 @@ const App = () => {
 };
 
 const styles = StyleSheet.create({
+  //styles here
   container: {
     flex: 1,
     backgroundColor: '#fff',
