@@ -1,6 +1,6 @@
 workflows:
   react-native:
-    name: simple-ios-todo
+    name: simpleiostodo
     max_build_duration: 60
     environment:
       vars:
